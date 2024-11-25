@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900;
+  }
+  .container {
+    @apply flex justify-center items-center mx-auto h-screen;
+  }
+  .password-box {
+    @apply shadow-md w-full max-w-md bg-gray-800 rounded-lg px-8 pt-6 pb-8;
+  }
+  h1 {
+    @apply text-3xl text-white font-semibold text-center my-4 mb-8;
+  }
+}
+
+@layer components {
+  .checked-container {
+    @apply flex items-center mb-4;
+  }
+
+  .input-field {
+    @apply h-4 w-4 text-blue-600 focus:ring-blue-500;
+  }
+
+  .input-label {
+    @apply block text-white text-sm font-bold ml-2;
+  }
+
+  .password-input {
+    @apply block text-white text-sm font-bold mb-2;
+  }
+
+  .password-input-field {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+  }
+
+  .button-field {
+    @apply w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 shrink-0 hover:shadow-lg transition ease-in-out duration-300;
+  }
+}
