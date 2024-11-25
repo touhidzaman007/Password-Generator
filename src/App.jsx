@@ -1,8 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Length from './components/Length';
-import AllowedChecked from './components/AllowedChecked';
-import Password from './components/Password';
-import Button from './components/Button';
+import { AllowedChecked, Length, Password, Button } from './components';
 
 function App() {
   const [length, setLength] = useState(8);
